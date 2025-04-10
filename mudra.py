@@ -9,17 +9,17 @@ def home_page():
 
 @app.route("/Tools")
 def tools_page():
-    pass
+    return render_template('tools.html')
 
 
 @app.route("/Products")
 def products_page():
-    pass
+    return render_template('products.html')
 
 @app.route("/login")
 def login_page():
-    pass
+    return render_template('login.html')
 
 @app.route("/register")
 def register_page():
-    pass
+    return render_template('register.html')
