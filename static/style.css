@@ -1,63 +1,36 @@
-.great-vibes{
-    font-family:'Great Vibes',cursive;
+/* Font Styling */
+.great-vibes {
+    font-family: 'Great Vibes', cursive;
     font-size: 35px;
-    color:orange !important;
+    color: orange !important;
 }
 
-.navbar-orange-outline{
-    border-bottom: 3px solid orange;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+/* Navbar Styling */
+.navbar {
+    background-color: white !important;
+    z-index: 1040; /* Ensure it stays above content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.navbar .dropdown-menu .dropdown-item {
-    display: inline-block; 
-    padding: 10px 15px; 
-    width: auto;
-}
-
-.dropdown-toggle{
-    font-weight: bold;
-}
-
-.dropdown-item{
-    font-weight: bold;
-}
-
-.navbar .dropdown-menu {
-    width: auto;  
-    max-width: 200px;  
-    box-sizing: border-box;  
-}
-
-.navbar .dropdown-menu {
-    max-width: 100vw;  
-    overflow-x: auto; 
-}
-
-@media (min-width: 992px) {
-    .navbar .nav-item.dropdown:hover .dropdown-menu {
-        right: 0;
-    }
-}
-
-@media (max-width: 991px) {
-    .navbar .dropdown-menu {
-        left: auto;
-        right: 0;  
-    }
-}
-
+/* Contact Bar Styling */
 .contact-bar {
     background-color: orange;
     width: 100%;
     font-weight: bold;
     font-size: 14px;
     padding: 4px 20px;
-    margin-top: 70px; 
     color: white;
     text-align: right;
+    position: fixed;
+    top: 75px; /* Position the contact bar below the navbar */
+    left: 0;
+    z-index: 1030; /* Ensure the contact bar stays below the navbar */
 }
 
+/* Icons in Contact Bar */
 .contact-bar i {
     color: white;
     margin-right: 8px;
@@ -69,7 +42,7 @@
     margin-left: 15px;
 }
 
-.whatsapp-link i{
+.whatsapp-link i {
     margin-right: 4px;
 }
 
@@ -77,11 +50,55 @@
     text-decoration: underline;
 }
 
-.phone-link{
-    color:white;
+.phone-link {
+    color: white;
     text-decoration: none;
 }
 
-.phone-link:hover{
+.phone-link:hover {
     text-decoration: underline;
+}
+
+/* Dropdown Menu Styling */
+.navbar .dropdown-menu .dropdown-item {
+    display: inline-block;
+    padding: 10px 15px;
+    width: auto;
+}
+
+.dropdown-toggle {
+    font-weight: bold;
+}
+
+.dropdown-item {
+    font-weight: bold;
+}
+
+.navbar .dropdown-menu {
+    width: auto;
+    max-width: 200px;
+    box-sizing: border-box;
+}
+
+.navbar .dropdown-menu {
+    max-width: 100vw;
+    overflow-x: auto;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+/* Page Content Section */
+.page-content {
+    padding-top: 135px; /* Adjust according to the combined height of the navbar (60px) and contact bar (60px) */
 }
