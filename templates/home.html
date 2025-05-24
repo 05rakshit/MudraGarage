@@ -3,6 +3,46 @@
     Business Loan | Home Loan | Professional Loan | Personal Loanj
 {% endblock%}
 
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='homestyle.css') }}"> 
+{% endblock %}
+
 {% block content %}
+<!-- Carousel Section -->
+<div id="contentCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#contentCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#contentCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#contentCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#contentCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner text-center p-5" style="background: orange">
+        <div class="carousel-item active">
+        <h2 class="fw-bold text-primary">Desire an Effortless Home Loan?</h2>
+        <p class="text-muted">Apply online to turn your goal of owning a house into reality.</p>
+        <a href="#" class="btn btn-primary mt-3">Apply Now</a>
+        </div>
+        
+        <div class="carousel-item">
+        <h2 class="fw-bold text-primary">Need a Business Loan?</h2>
+        <p class="text-muted">Get instant business loans with minimal paperwork and fast approvals.</p>
+        <a href="#" class="btn btn-primary mt-3">Learn More</a>
+        </div>
+        
+        <div class="carousel-item">
+        <h2 class="fw-bold text-primary">Need a Business Loan?</h2>
+        <p class="text-muted">Get instant business loans with minimal paperwork and fast approvals.</p>
+        <a href="#" class="btn btn-primary mt-3">Learn More</a>
+        </div>
+
+        <div class="carousel-item">
+        <h2 class="fw-bold text-primary">Need a Business Loan?</h2>
+        <p class="text-muted">Get instant business loans with minimal paperwork and fast approvals.</p>
+        <a href="#" class="btn btn-primary mt-3">Learn More</a>
+        </div>
+    
+  </div>
 
 {% endblock %}
